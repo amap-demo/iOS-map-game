@@ -1,0 +1,4 @@
+platform :ios, '8.0'
+target 'reaverInMap' do
+  pod 'AMap3DMap'
+end
