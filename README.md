@@ -11,8 +11,8 @@
 ## 核心类/接口 ##
 | 类    | 接口  | 说明   | 版本  |
 | -----|:-----:|:-----:|:-----:|
-| AMap3DObjectOverlay	| + (instancetype)objectOverlayWithCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate size:(CLLocationDistance)size vertexPointer:(float *)vertexPointer normalPointer:(float *)normalPointer texCoordPointer:(float *)texCoordPointer vertsNum:(unsigned int)vertsNum; | 继承自NSObject<MAOverlay>，实现了设置coordinate | --- |
-| AMap3DObjectOverlayRenderer	| - (void)glRender; | 自定义Overlay绘制模型的核心代码 | --- |
+| AMap3DObjectOverlay	| + (instancetype)objectOverlayWithCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate size:(CLLocationDistance)size vertexPointer:(float *)vertexPointer normalPointer:(float *)normalPointer texCoordPointer:(float *)texCoordPointer vertsNum:(unsigned int)vertsNum; | 继承自NSObject<MAOverlay>，实现了设置coordinate | v4.0.0+ |
+| AMap3DObjectOverlayRenderer	| - (void)glRender; | 自定义Overlay绘制模型的核心代码 | v4.0.0+ |
 
 ##效果图如下:
 
@@ -51,6 +51,9 @@
     [self.mapView addOverlay:self.airPlaneOverlay];
 }
 
+```
+
+``` objc
 
 ///核心模型绘制代码
 - (void)glRender
