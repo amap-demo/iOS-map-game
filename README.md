@@ -14,10 +14,6 @@
 | AMap3DObjectOverlay	| + (instancetype)objectOverlayWithCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate size:(CLLocationDistance)size vertexPointer:(float *)vertexPointer normalPointer:(float *)normalPointer texCoordPointer:(float *)texCoordPointer vertsNum:(unsigned int)vertsNum; | 继承自NSObject<MAOverlay>，实现了设置coordinate | v4.0.0+ |
 | AMap3DObjectOverlayRenderer	| - (void)glRender; | 自定义Overlay绘制模型的核心代码 | v4.0.0+ |
 
-##效果图如下:
-
-* ![Screenshot](pictures/screenshot01.PNG "Case01")
-
 ## 核心难点 ##
 
 ``` objc
@@ -117,5 +113,10 @@
 }
 
 ```
+
+## 效果图如下 ##
+
+* ![Screenshot](pictures/screenshot01.PNG "Case01")
+
 
 
