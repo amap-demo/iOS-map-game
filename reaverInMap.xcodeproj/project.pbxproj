@@ -384,13 +384,14 @@
 			baseConfigurationReference = CDF9302E7AD6AD506F415181 /* Pods-reaverInMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = YMJ372W38W;
 				INFOPLIST_FILE = reaverInMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.reaverInMap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "48216a7c-4edd-4f5d-9389-95ffbd3ea775";
-				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				PROVISIONING_PROFILE = "a892512d-fe94-4702-b716-0b66880b936d";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
 			};
 			name = Release;
 		};
