@@ -20,7 +20,7 @@ glTexCoordPointer(2, GL_FLOAT, 0, Farmhouse_OBJTexCoords);
 glDrawArrays(GL_TRIANGLES, 0, Farmhouse_OBJNumVerts);
 */
 
-unsigned int Farmhouse_OBJNumVerts = 768;
+static unsigned int Farmhouse_OBJNumVerts = 768;
 
 float Farmhouse_OBJVerts [] = {
   // f 1/1/1 2/2/2 3/3/3 4/4/4

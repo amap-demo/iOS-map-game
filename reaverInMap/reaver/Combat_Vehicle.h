@@ -20,7 +20,7 @@ glTexCoordPointer(2, GL_FLOAT, 0, Combat_VehicleTexCoords);
 glDrawArrays(GL_TRIANGLES, 0, Combat_VehicleNumVerts);
 */
 
-unsigned int Combat_VehicleNumVerts = 8949;
+static unsigned int Combat_VehicleNumVerts = 8949;
 
 float Combat_VehicleVerts [] = {
   // f 1/1/1 2/2/1 3/3/1 

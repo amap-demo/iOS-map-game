@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		196BC8641D6B1A6100EBF216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 196BC8631D6B1A6100EBF216 /* Assets.xcassets */; };
+		19E2250C1E0B85C4009F2797 /* ObjConvert.c in Sources */ = {isa = PBXBuildFile; fileRef = 19E2250A1E0B85C4009F2797 /* ObjConvert.c */; };
+		19E2250D1E0B8BBA009F2797 /* AMap3DObjectOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B61EBF1D66A20900415DAD /* AMap3DObjectOverlay.m */; };
+		19E2250E1E0B8BBC009F2797 /* AMap3DObjectOverlayRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B61EC21D66A41100415DAD /* AMap3DObjectOverlayRenderer.m */; };
+		19EFDB071E039451004702D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EFDB061E039451004702D3 /* AppDelegate.swift */; };
+		19EFDB091E039451004702D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19EFDB081E039451004702D3 /* ViewController.swift */; };
+		19EFDB0C1E039451004702D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EFDB0A1E039451004702D3 /* Main.storyboard */; };
+		19EFDB111E039451004702D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EFDB0F1E039451004702D3 /* LaunchScreen.storyboard */; };
+		19EFDB4B1E078DD0004702D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EFDB4A1E078DD0004702D3 /* Assets.xcassets */; };
 		81B61EC01D66A20900415DAD /* AMap3DObjectOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B61EBF1D66A20900415DAD /* AMap3DObjectOverlay.m */; };
 		81B61EC31D66A41100415DAD /* AMap3DObjectOverlayRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B61EC21D66A41100415DAD /* AMap3DObjectOverlayRenderer.m */; };
 		8DDFCBC6229ACF1523D24210 /* libPods-reaverInMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52950540D3CDE5FAA9A06E08 /* libPods-reaverInMap.a */; };
@@ -16,6 +24,7 @@
 		C87E3AF21C57245E000ACF0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87E3AF11C57245E000ACF0C /* ViewController.m */; };
 		C87E3AF51C57245E000ACF0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C87E3AF31C57245E000ACF0C /* Main.storyboard */; };
 		C87E3AFA1C57245E000ACF0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C87E3AF81C57245E000ACF0C /* LaunchScreen.storyboard */; };
+		EC657A67B8D1F8DDC0E15E6B /* libPods-reaverInMap-swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B07C6B626E42F28A90C29A7 /* libPods-reaverInMap-swift.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,11 +33,24 @@
 		196BC8621D6B1A3F00EBF216 /* Combat_Vehicle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Combat_Vehicle.h; path = reaver/Combat_Vehicle.h; sourceTree = "<group>"; };
 		196BC8631D6B1A6100EBF216 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		196BC8651D6B1DBB00EBF216 /* raptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = raptor.h; path = reaver/raptor.h; sourceTree = "<group>"; };
+		19E2250A1E0B85C4009F2797 /* ObjConvert.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ObjConvert.c; sourceTree = "<group>"; };
+		19E2250B1E0B85C4009F2797 /* ObjConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjConvert.h; sourceTree = "<group>"; };
+		19EFDB041E039451004702D3 /* reaverInMap-swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reaverInMap-swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		19EFDB061E039451004702D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		19EFDB081E039451004702D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		19EFDB0B1E039451004702D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		19EFDB101E039451004702D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		19EFDB121E039451004702D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19EFDB161E039AB5004702D3 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		19EFDB4A1E078DD0004702D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = reaverInMap/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		52950540D3CDE5FAA9A06E08 /* libPods-reaverInMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reaverInMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EE88CC9B58D6300B917AA4F /* Pods-reaverInMap-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reaverInMap-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reaverInMap-swift/Pods-reaverInMap-swift.debug.xcconfig"; sourceTree = "<group>"; };
+		7DB8CED35D49AE0312DE0D28 /* Pods-reaverInMap-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reaverInMap-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-reaverInMap-swift/Pods-reaverInMap-swift.release.xcconfig"; sourceTree = "<group>"; };
 		81B61EBE1D66A20900415DAD /* AMap3DObjectOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMap3DObjectOverlay.h; sourceTree = "<group>"; };
 		81B61EBF1D66A20900415DAD /* AMap3DObjectOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMap3DObjectOverlay.m; sourceTree = "<group>"; };
 		81B61EC11D66A41100415DAD /* AMap3DObjectOverlayRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMap3DObjectOverlayRenderer.h; sourceTree = "<group>"; };
 		81B61EC21D66A41100415DAD /* AMap3DObjectOverlayRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMap3DObjectOverlayRenderer.m; sourceTree = "<group>"; };
+		9B07C6B626E42F28A90C29A7 /* libPods-reaverInMap-swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reaverInMap-swift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87E3AE71C57245E000ACF0C /* reaverInMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reaverInMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C87E3AEB1C57245E000ACF0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C87E3AED1C57245E000ACF0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,6 +66,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		19EFDB011E039451004702D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC657A67B8D1F8DDC0E15E6B /* libPods-reaverInMap-swift.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C87E3AE41C57245D000ACF0C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,11 +85,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19EFDB051E039451004702D3 /* reaverInMap-swift */ = {
+			isa = PBXGroup;
+			children = (
+				19EFDB061E039451004702D3 /* AppDelegate.swift */,
+				19EFDB081E039451004702D3 /* ViewController.swift */,
+				19EFDB161E039AB5004702D3 /* BridgeHeader.h */,
+				19E2250A1E0B85C4009F2797 /* ObjConvert.c */,
+				19E2250B1E0B85C4009F2797 /* ObjConvert.h */,
+				19EFDB4A1E078DD0004702D3 /* Assets.xcassets */,
+				19EFDB0A1E039451004702D3 /* Main.storyboard */,
+				19EFDB0F1E039451004702D3 /* LaunchScreen.storyboard */,
+				19EFDB121E039451004702D3 /* Info.plist */,
+			);
+			path = "reaverInMap-swift";
+			sourceTree = "<group>";
+		};
 		B6031342AA2AACF8E44E507C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				DB73DC24840701C027D05BDE /* Pods-reaverInMap.debug.xcconfig */,
 				CDF9302E7AD6AD506F415181 /* Pods-reaverInMap.release.xcconfig */,
+				6EE88CC9B58D6300B917AA4F /* Pods-reaverInMap-swift.debug.xcconfig */,
+				7DB8CED35D49AE0312DE0D28 /* Pods-reaverInMap-swift.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -68,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				C87E3AE91C57245E000ACF0C /* reaverInMap */,
+				19EFDB051E039451004702D3 /* reaverInMap-swift */,
 				C87E3AE81C57245E000ACF0C /* Products */,
 				B6031342AA2AACF8E44E507C /* Pods */,
 				CD146C76BC4A44DA81A98CFE /* Frameworks */,
@@ -78,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				C87E3AE71C57245E000ACF0C /* reaverInMap.app */,
+				19EFDB041E039451004702D3 /* reaverInMap-swift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				52950540D3CDE5FAA9A06E08 /* libPods-reaverInMap.a */,
+				9B07C6B626E42F28A90C29A7 /* libPods-reaverInMap-swift.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -134,6 +185,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		19EFDB031E039451004702D3 /* reaverInMap-swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19EFDB151E039451004702D3 /* Build configuration list for PBXNativeTarget "reaverInMap-swift" */;
+			buildPhases = (
+				B8A6276FDC0C340D53941503 /* [CP] Check Pods Manifest.lock */,
+				19EFDB001E039451004702D3 /* Sources */,
+				19EFDB011E039451004702D3 /* Frameworks */,
+				19EFDB021E039451004702D3 /* Resources */,
+				036B826B21D9A5010F829D2E /* [CP] Embed Pods Frameworks */,
+				92B90F8C01B837928B970F68 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "reaverInMap-swift";
+			productName = "reaverInMap-swift";
+			productReference = 19EFDB041E039451004702D3 /* reaverInMap-swift.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C87E3AE61C57245D000ACF0C /* reaverInMap */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C87E3AFE1C57245E000ACF0C /* Build configuration list for PBXNativeTarget "reaverInMap" */;
@@ -160,9 +231,15 @@
 		C87E3ADF1C57245D000ACF0C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Autonavi;
 				TargetAttributes = {
+					19EFDB031E039451004702D3 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
+					};
 					C87E3AE61C57245D000ACF0C = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = YMJ372W38W;
@@ -184,11 +261,22 @@
 			projectRoot = "";
 			targets = (
 				C87E3AE61C57245D000ACF0C /* reaverInMap */,
+				19EFDB031E039451004702D3 /* reaverInMap-swift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		19EFDB021E039451004702D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19EFDB111E039451004702D3 /* LaunchScreen.storyboard in Resources */,
+				19EFDB4B1E078DD0004702D3 /* Assets.xcassets in Resources */,
+				19EFDB0C1E039451004702D3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C87E3AE51C57245D000ACF0C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,6 +290,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		036B826B21D9A5010F829D2E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reaverInMap-swift/Pods-reaverInMap-swift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		75E06EB9EFE925CA88F056A1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,6 +318,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reaverInMap/Pods-reaverInMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92B90F8C01B837928B970F68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reaverInMap-swift/Pods-reaverInMap-swift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8A6276FDC0C340D53941503 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		D1BE4B81774E264C08A2097A /* [CP] Copy Pods Resources */ = {
@@ -244,12 +377,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		19EFDB001E039451004702D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19EFDB091E039451004702D3 /* ViewController.swift in Sources */,
+				19EFDB071E039451004702D3 /* AppDelegate.swift in Sources */,
+				19E2250C1E0B85C4009F2797 /* ObjConvert.c in Sources */,
+				19E2250E1E0B8BBC009F2797 /* AMap3DObjectOverlayRenderer.m in Sources */,
+				19E2250D1E0B8BBA009F2797 /* AMap3DObjectOverlay.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C87E3AE31C57245D000ACF0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,6 +410,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		19EFDB0A1E039451004702D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19EFDB0B1E039451004702D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		19EFDB0F1E039451004702D3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				19EFDB101E039451004702D3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		C87E3AF31C57245E000ACF0C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -284,6 +445,56 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		19EFDB131E039451004702D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6EE88CC9B58D6300B917AA4F /* Pods-reaverInMap-swift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "reaverInMap-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.reaverInMap-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "262ce89f-36c1-471e-b3aa-17585737754f";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "reaverInMap-swift/BridgeHeader.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		19EFDB141E039451004702D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DB8CED35D49AE0312DE0D28 /* Pods-reaverInMap-swift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = "reaverInMap-swift/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.autonavi.reaverInMap-swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "37bcbefd-c99d-44d5-a048-5ff502582130";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
+				SWIFT_OBJC_BRIDGING_HEADER = "reaverInMap-swift/BridgeHeader.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C87E3AFC1C57245E000ACF0C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -398,6 +609,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		19EFDB151E039451004702D3 /* Build configuration list for PBXNativeTarget "reaverInMap-swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				19EFDB131E039451004702D3 /* Debug */,
+				19EFDB141E039451004702D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C87E3AE21C57245D000ACF0C /* Build configuration list for PBXProject "reaverInMap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

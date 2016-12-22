@@ -20,7 +20,7 @@ glTexCoordPointer(2, GL_FLOAT, 0, Snow_covered_CottageOBJTexCoords);
 glDrawArrays(GL_TRIANGLES, 0, Snow_covered_CottageOBJNumVerts);
 */
 
-unsigned int Snow_covered_CottageOBJNumVerts = 1584;
+static unsigned int Snow_covered_CottageOBJNumVerts = 1584;
 
 float Snow_covered_CottageOBJVerts [] = {
   // f 1/1/1 2/2/2 4/3/3 3/4/4

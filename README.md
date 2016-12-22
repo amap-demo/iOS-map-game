@@ -15,9 +15,9 @@
 | AMap3DObjectOverlayRenderer	| - (void)glRender; | 自定义Overlay绘制模型的核心代码 | v4.0.0+ |
 
 ## 核心难点 ##
+objective c
 
 ``` objc
-
 ///自定义Overlay回调
 - (MAOverlayRenderer *)mapView:(MAMapView *)mapView rendererForOverlay:(id <MAOverlay>)overlay
 {
@@ -33,8 +33,30 @@
 }
 ```
 
-``` objc
+swift
 
+``` swift
+///自定义Overlay回调
+func mapView(_ mapView: MAMapView!, rendererFor overlay: MAOverlay!) -> MAOverlayRenderer! {
+    if overlay.isKind(of: AMap3DObjectOverlay.self) {
+        let objOverlay:AMap3DObjectOverlay = overlay as! AMap3DObjectOverlay
+
+        let reaverRender: AMap3DObjectOverlayRenderer = AMap3DObjectOverlayRenderer(objectOverlay: overlay as! AMap3DObjectOverlay)
+
+        let image:UIImage = UIImage.init(named: objOverlay.textureName)!
+
+        reaverRender.loadStrokeTextureImage(image)
+
+        return reaverRender
+    }
+
+    return nil
+}
+
+```
+
+objective c
+``` objc
 ///初始化3D模型
 - (void)airPlaneInit
 {
@@ -49,8 +71,25 @@
 
 ```
 
-``` objc
+swift
+``` swift
+func airPlaneInit() {
+    self.airPlaneOverlay = AMap3DObjectOverlay(center: CLLocationCoordinate2DMake(39.984479, 116.494635),
+        size: 100,
+        vertexPointer: pRaptorVerts,
+        normalPointer: pRaptorNormals,
+        texCoordPointer: pRaptorTexCoords,
+        vertsNum: raptorNumVerts)
+    self.airPlaneOverlay.angle = 128
+    self.airPlaneOverlay.altitude = 10
+    self.airPlaneOverlay.textureName = "FA-22_Raptor_P01"
+    self.mapView.add(self.airPlaneOverlay)
+}
+```
 
+
+model为OC写，所以只有OC版本
+``` objc
 ///核心模型绘制代码
 - (void)glRender
 {

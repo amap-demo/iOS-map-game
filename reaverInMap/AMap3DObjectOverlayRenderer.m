@@ -17,16 +17,27 @@ struct AMap3DObjectVertex {
 };
 typedef struct AMap3DObjectVertex AMap3DObjectVertex;
 
+@interface AMap3DObjectOverlayRenderer()
+
+@property (nonatomic, assign)BOOL isNeedDoMoveCoordinate;
+
+@end
+
 @implementation AMap3DObjectOverlayRenderer
 {
     AMap3DObjectVertex _centerGL;
     CGFloat            _sizeGL;
-    BOOL               _isNeedDoMoveCoordinate;
+//    BOOL               _isNeedDoMoveCoordinate;
     CLLocationCoordinate2D _fromValue;
     CLLocationCoordinate2D _toValue;
     CFTimeInterval _duration;
     CFTimeInterval _elapse;
     CFTimeInterval _currentTime;
+}
+
+- (void)setIsNeedDoMoveCoordinate:(BOOL)isNeedDoMoveCoordinate
+{
+    _isNeedDoMoveCoordinate = isNeedDoMoveCoordinate;
 }
 
 #pragma mark - Interface
@@ -54,7 +65,7 @@ typedef struct AMap3DObjectVertex AMap3DObjectVertex;
     _duration = duration;
     _elapse = 0;
     _currentTime = CACurrentMediaTime();
-    _isNeedDoMoveCoordinate = YES;
+    self.isNeedDoMoveCoordinate = YES;
 }
 
 - (void)didMoveCoordinate
@@ -63,7 +74,7 @@ typedef struct AMap3DObjectVertex AMap3DObjectVertex;
 
         [self setOverlayCoordinate:_toValue];
         
-        _isNeedDoMoveCoordinate = NO;
+        self.isNeedDoMoveCoordinate = NO;
         
         [self referenceDidChange];
 
@@ -113,7 +124,7 @@ typedef struct AMap3DObjectVertex AMap3DObjectVertex;
 {
     AMap3DObjectOverlay *objOverlay = self.objOverlay;
     
-    if (_isNeedDoMoveCoordinate) {
+    if (self.isNeedDoMoveCoordinate) {
         [self didMoveCoordinate];
     }
     
