@@ -195,6 +195,13 @@
 
 #pragma mark - life cycle
 
+- (void)viewDidAppear:(BOOL)animated {
+    [self airPlaneInit];
+    [self carInit];
+    [self monsterInit];
+    [self houseInit];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -202,10 +209,6 @@
     [self.view addSubview:self.mapView];
     self.mapView.delegate = self;
     
-    [self airPlaneInit];
-    [self carInit];
-    [self monsterInit];
-    [self houseInit];
     
 }
 

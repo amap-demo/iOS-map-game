@@ -157,6 +157,16 @@ class ViewController: UIViewController, MAMapViewDelegate, AMap3DObjectOverlayRe
         self.mapView.add(self.airPlaneOverlay)
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        airPlaneInit()
+        carInit()
+        monsterInit()
+        houseInit()
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -165,10 +175,6 @@ class ViewController: UIViewController, MAMapViewDelegate, AMap3DObjectOverlayRe
         //set up mapView
         view.addSubview(mapView)
         mapView.delegate = self
-        airPlaneInit()
-        carInit()
-        monsterInit()
-        houseInit()
     }
 
     override func didReceiveMemoryWarning() {
