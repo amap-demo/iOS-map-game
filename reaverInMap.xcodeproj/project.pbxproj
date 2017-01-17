@@ -24,8 +24,19 @@
 		C87E3AF21C57245E000ACF0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C87E3AF11C57245E000ACF0C /* ViewController.m */; };
 		C87E3AF51C57245E000ACF0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C87E3AF31C57245E000ACF0C /* Main.storyboard */; };
 		C87E3AFA1C57245E000ACF0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C87E3AF81C57245E000ACF0C /* LaunchScreen.storyboard */; };
+		D9F65BF41E2E04EE002BBD5C /* reaverInMapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F65BF31E2E04EE002BBD5C /* reaverInMapUITests.m */; };
 		EC657A67B8D1F8DDC0E15E6B /* libPods-reaverInMap-swift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B07C6B626E42F28A90C29A7 /* libPods-reaverInMap-swift.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9F65BF61E2E04EE002BBD5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C87E3ADF1C57245D000ACF0C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C87E3AE61C57245D000ACF0C;
+			remoteInfo = reaverInMap;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		196BC8601D6B14A100EBF216 /* Farmhouse OBJ.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Farmhouse OBJ.h"; path = "reaver/Farmhouse OBJ.h"; sourceTree = "<group>"; };
@@ -62,6 +73,9 @@
 		C87E3AFB1C57245E000ACF0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8D009031C57358E003C075A /* FelReaverMount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FelReaverMount.h; path = reaver/FelReaverMount.h; sourceTree = "<group>"; };
 		CDF9302E7AD6AD506F415181 /* Pods-reaverInMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reaverInMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-reaverInMap/Pods-reaverInMap.release.xcconfig"; sourceTree = "<group>"; };
+		D9F65BF11E2E04EE002BBD5C /* reaverInMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reaverInMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F65BF31E2E04EE002BBD5C /* reaverInMapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reaverInMapUITests.m; sourceTree = "<group>"; };
+		D9F65BF51E2E04EE002BBD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB73DC24840701C027D05BDE /* Pods-reaverInMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reaverInMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reaverInMap/Pods-reaverInMap.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +93,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DDFCBC6229ACF1523D24210 /* libPods-reaverInMap.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F65BEE1E2E04EE002BBD5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +138,7 @@
 			children = (
 				C87E3AE91C57245E000ACF0C /* reaverInMap */,
 				19EFDB051E039451004702D3 /* reaverInMap-swift */,
+				D9F65BF21E2E04EE002BBD5C /* reaverInMapUITests */,
 				C87E3AE81C57245E000ACF0C /* Products */,
 				B6031342AA2AACF8E44E507C /* Pods */,
 				CD146C76BC4A44DA81A98CFE /* Frameworks */,
@@ -128,6 +150,7 @@
 			children = (
 				C87E3AE71C57245E000ACF0C /* reaverInMap.app */,
 				19EFDB041E039451004702D3 /* reaverInMap-swift.app */,
+				D9F65BF11E2E04EE002BBD5C /* reaverInMapUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +205,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D9F65BF21E2E04EE002BBD5C /* reaverInMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D9F65BF31E2E04EE002BBD5C /* reaverInMapUITests.m */,
+				D9F65BF51E2E04EE002BBD5C /* Info.plist */,
+			);
+			path = reaverInMapUITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,6 +257,24 @@
 			productReference = C87E3AE71C57245E000ACF0C /* reaverInMap.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D9F65BF01E2E04EE002BBD5C /* reaverInMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9F65BFA1E2E04EF002BBD5C /* Build configuration list for PBXNativeTarget "reaverInMapUITests" */;
+			buildPhases = (
+				D9F65BED1E2E04EE002BBD5C /* Sources */,
+				D9F65BEE1E2E04EE002BBD5C /* Frameworks */,
+				D9F65BEF1E2E04EE002BBD5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9F65BF71E2E04EE002BBD5C /* PBXTargetDependency */,
+			);
+			name = reaverInMapUITests;
+			productName = reaverInMapUITests;
+			productReference = D9F65BF11E2E04EE002BBD5C /* reaverInMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -245,6 +295,12 @@
 						DevelopmentTeam = YMJ372W38W;
 						ProvisioningStyle = Manual;
 					};
+					D9F65BF01E2E04EE002BBD5C = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = YMJ372W38W;
+						ProvisioningStyle = Manual;
+						TestTargetID = C87E3AE61C57245D000ACF0C;
+					};
 				};
 			};
 			buildConfigurationList = C87E3AE21C57245D000ACF0C /* Build configuration list for PBXProject "reaverInMap" */;
@@ -262,6 +318,7 @@
 			targets = (
 				C87E3AE61C57245D000ACF0C /* reaverInMap */,
 				19EFDB031E039451004702D3 /* reaverInMap-swift */,
+				D9F65BF01E2E04EE002BBD5C /* reaverInMapUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -284,6 +341,13 @@
 				C87E3AFA1C57245E000ACF0C /* LaunchScreen.storyboard in Resources */,
 				196BC8641D6B1A6100EBF216 /* Assets.xcassets in Resources */,
 				C87E3AF51C57245E000ACF0C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F65BEF1E2E04EE002BBD5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,7 +471,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D9F65BED1E2E04EE002BBD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9F65BF41E2E04EE002BBD5C /* reaverInMapUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9F65BF71E2E04EE002BBD5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C87E3AE61C57245D000ACF0C /* reaverInMap */;
+			targetProxy = D9F65BF61E2E04EE002BBD5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		19EFDB0A1E039451004702D3 /* Main.storyboard */ = {
@@ -606,6 +686,44 @@
 			};
 			name = Release;
 		};
+		D9F65BF81E2E04EF002BBD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = reaverInMapUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.reaverInMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8014ae4e-33b6-4937-87e3-3725a2aad4f7";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = reaverInMap;
+			};
+			name = Debug;
+		};
+		D9F65BF91E2E04EF002BBD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = YMJ372W38W;
+				INFOPLIST_FILE = reaverInMapUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.autonavi.reaverInMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "8014ae4e-33b6-4937-87e3-3725a2aad4f7";
+				PROVISIONING_PROFILE_SPECIFIER = openPlatform_development;
+				TEST_TARGET_NAME = reaverInMap;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -635,6 +753,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		D9F65BFA1E2E04EF002BBD5C /* Build configuration list for PBXNativeTarget "reaverInMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F65BF81E2E04EF002BBD5C /* Debug */,
+				D9F65BF91E2E04EF002BBD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
