@@ -24,7 +24,6 @@
 + (instancetype)objectOverlayWithCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate
                                              size:(CLLocationDistance)size
                                     vertexPointer:(float *)vertexPointer
-                                    normalPointer:(float *)normalPointer
                                   texCoordPointer:(float *)texCoordPointer
                                          vertsNum:(unsigned int)vertsNum;
 

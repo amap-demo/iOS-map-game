@@ -50,7 +50,8 @@
     {
         AMap3DObjectOverlay *objOverlay = (AMap3DObjectOverlay *)overlay;
         AMap3DObjectOverlayRenderer * reaverRenderer = [[AMap3DObjectOverlayRenderer alloc] initWithObjectOverlay:overlay];
-        [reaverRenderer loadStrokeTextureImage:[UIImage imageNamed:objOverlay.textureName]];
+        UIImage *image = [UIImage imageNamed:objOverlay.textureName];
+        [reaverRenderer loadStrokeTextureImage:image];
         return reaverRenderer;
     }
     
@@ -99,13 +100,12 @@
     self.house1 = [AMap3DObjectOverlay objectOverlayWithCenterCoordinate:CLLocationCoordinate2DMake(39.993266, 116.473269)
                                                                     size:150
                                                            vertexPointer:Snow_covered_CottageOBJVerts
-                                                           normalPointer:Snow_covered_CottageOBJNormals
                                                          texCoordPointer:Snow_covered_CottageOBJTexCoords
                                                                 vertsNum:Snow_covered_CottageOBJNumVerts];
     
     self.house1.angle = 315;
     self.house1.altitude = 5;
-    self.house1.textureName = @"Cottage Texture";
+    self.house1.textureName = @"Cottage_Texture.jpg";
     
     [self.mapView addOverlay:self.house1];
     
@@ -113,13 +113,12 @@
     self.house2 = [AMap3DObjectOverlay objectOverlayWithCenterCoordinate:CLLocationCoordinate2DMake(39.994794, 116.47762)
                                                                     size:150
                                                            vertexPointer:Farmhouse_OBJVerts
-                                                           normalPointer:Farmhouse_OBJNormals
                                                          texCoordPointer:Farmhouse_OBJTexCoords
                                                                 vertsNum:Farmhouse_OBJNumVerts];
     
     self.house2.angle = 40;
     self.house2.altitude = 5;
-    self.house2.textureName = @"Farmhouse Texture";
+    self.house2.textureName = @"Farmhouse_Texture.jpg";
     
     [self.mapView addOverlay:self.house2];
 
@@ -131,13 +130,12 @@
     self.monsterOverlay = [AMap3DObjectOverlay objectOverlayWithCenterCoordinate:CLLocationCoordinate2DMake(39.996965, 116.478548)
                                                                             size:300
                                                                    vertexPointer:FelReaverMountVerts
-                                                                   normalPointer:FelReaverMountNormals
                                                                  texCoordPointer:FelReaverMountTexCoords
                                                                         vertsNum:FelReaverMountNumVerts];
     
     self.monsterOverlay.angle = 200;
     self.monsterOverlay.altitude = 130;
-    self.monsterOverlay.textureName = @"FelReaverMount";
+    self.monsterOverlay.textureName = @"FelReaverMount.png";
     
     [self.mapView addOverlay:self.monsterOverlay];
 }
@@ -147,12 +145,11 @@
     self.carOverlay = [AMap3DObjectOverlay objectOverlayWithCenterCoordinate:CLLocationCoordinate2DMake(39.991289, 116.472575)
                                                                  size:35
                                                         vertexPointer:Combat_VehicleVerts
-                                                        normalPointer:Combat_VehicleNormals
                                                       texCoordPointer:Combat_VehicleTexCoords
                                                              vertsNum:Combat_VehicleNumVerts];
     self.carOverlay.angle = 40;
     self.carOverlay.altitude = 4;
-    self.carOverlay.textureName = @"V_body";
+    self.carOverlay.textureName = @"V_body.png";
     
     [self.mapView addOverlay:self.carOverlay];
     
@@ -163,12 +160,11 @@
     self.airPlaneOverlay = [AMap3DObjectOverlay objectOverlayWithCenterCoordinate:CLLocationCoordinate2DMake(39.984479, 116.494635)
                                                                              size:100
                                                                     vertexPointer:raptorVerts
-                                                                    normalPointer:raptorNormals
                                                                   texCoordPointer:raptorTexCoords
                                                                          vertsNum:raptorNumVerts];
     self.airPlaneOverlay.angle = 128;
     self.airPlaneOverlay.altitude = 10;
-    self.airPlaneOverlay.textureName = @"FA-22_Raptor_P01";
+    self.airPlaneOverlay.textureName = @"FA-22_Raptor_P01.png";
     
     [self.mapView addOverlay:self.airPlaneOverlay];
 }

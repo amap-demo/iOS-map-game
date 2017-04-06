@@ -25,17 +25,15 @@
 + (instancetype)objectOverlayWithCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate
                                              size:(CLLocationDistance)size
                                     vertexPointer:(float *)vertexPointer
-                                    normalPointer:(float *)normalPointer
                                   texCoordPointer:(float *)texCoordPointer
                                          vertsNum:(unsigned int)vertsNum
 {
-    return [[self alloc] initWithCenterCoordinate:centerCoordinate size:size vertexPointer:vertexPointer normalPointer:normalPointer texCoordPointer:texCoordPointer vertsNum:vertsNum];
+    return [[self alloc] initWithCenterCoordinate:centerCoordinate size:size vertexPointer:vertexPointer texCoordPointer:texCoordPointer vertsNum:vertsNum];
 }
 
 - (instancetype)initWithCenterCoordinate:(CLLocationCoordinate2D)centerCoordinate
                                     size:(CLLocationDistance)size
                            vertexPointer:(float *)vertexPointer
-                           normalPointer:(float *)normalPointer
                          texCoordPointer:(float *)texCoordPointer
                                 vertsNum:(unsigned int)vertsNum
 {
@@ -44,7 +42,6 @@
         self.coordinate = centerCoordinate;
         self.size = size;
         _vertexPointer = vertexPointer;
-        _normalPointer = normalPointer;
         _texCoordPointer = texCoordPointer;
         _vertsNum = vertsNum;
         self.needsUpdateBoundingMapRect = NO;

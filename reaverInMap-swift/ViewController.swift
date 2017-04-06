@@ -94,25 +94,23 @@ class ViewController: UIViewController, MAMapViewDelegate, AMap3DObjectOverlayRe
         house1 = AMap3DObjectOverlay(center: CLLocationCoordinate2DMake(39.993266, 116.473269),
                                      size: 150,
                                      vertexPointer: pSnow_covered_CottageOBJVerts,
-                                     normalPointer: pSnow_covered_CottageOBJNormals,
                                      texCoordPointer: pSnow_covered_CottageOBJTexCoords,
                                      vertsNum: Snow_covered_CottageOBJNumVerts)
         
         self.house1.angle = 315
         self.house1.altitude = 5
-        self.house1.textureName = "Cottage Texture"
+        self.house1.textureName = "Cottage_Texture.jpg"
         self.mapView.add(self.house1)
         
         self.house2 = AMap3DObjectOverlay(center: CLLocationCoordinate2DMake(39.994794, 116.47762),
                                           size: 150,
                                           vertexPointer: pFarmhouse_OBJVerts,
-                                          normalPointer: pFarmhouse_OBJNormals,
                                           texCoordPointer: pFarmhouse_OBJTexCoords,
                                           vertsNum: Farmhouse_OBJNumVerts)
         
         self.house2.angle = 40
         self.house2.altitude = 5
-        self.house2.textureName = "Farmhouse Texture"
+        self.house2.textureName = "Farmhouse_Texture.jpg"
         self.mapView.add(self.house2)
     }
     
@@ -121,13 +119,12 @@ class ViewController: UIViewController, MAMapViewDelegate, AMap3DObjectOverlayRe
         self.monsterOverlay = AMap3DObjectOverlay(center: CLLocationCoordinate2DMake(39.996965, 116.478548),
                                                   size: 300,
                                                   vertexPointer: pFelReaverMountVerts,
-                                                  normalPointer: pFelReaverMountNormals,
                                                   texCoordPointer: pFelReaverMountTexCoords,
                                                   vertsNum: FelReaverMountNumVerts)
         
         self.monsterOverlay.angle = 200
         self.monsterOverlay.altitude = 130
-        self.monsterOverlay.textureName = "FelReaverMount"
+        self.monsterOverlay.textureName = "FelReaverMount.png"
         self.mapView.add(self.monsterOverlay)
     }
     
@@ -135,12 +132,11 @@ class ViewController: UIViewController, MAMapViewDelegate, AMap3DObjectOverlayRe
         self.carOverlay = AMap3DObjectOverlay(center: CLLocationCoordinate2DMake(39.991289, 116.472575),
                                               size: 35,
                                               vertexPointer: pCombat_VehicleVerts,
-                                              normalPointer: pCombat_VehicleNormals,
                                               texCoordPointer: pCombat_VehicleTexCoords,
                                               vertsNum: Combat_VehicleNumVerts)
         self.carOverlay.angle = 40
         self.carOverlay.altitude = 4
-        self.carOverlay.textureName = "V_body"
+        self.carOverlay.textureName = "V_body.png"
         self.mapView.add(self.carOverlay)
     }
     
@@ -148,12 +144,11 @@ class ViewController: UIViewController, MAMapViewDelegate, AMap3DObjectOverlayRe
         self.airPlaneOverlay = AMap3DObjectOverlay(center: CLLocationCoordinate2DMake(39.984479, 116.494635),
                                                    size: 100,
                                                    vertexPointer: pRaptorVerts,
-                                                   normalPointer: pRaptorNormals,
                                                    texCoordPointer: pRaptorTexCoords,
                                                    vertsNum: raptorNumVerts)
         self.airPlaneOverlay.angle = 128
         self.airPlaneOverlay.altitude = 10
-        self.airPlaneOverlay.textureName = "FA-22_Raptor_P01"
+        self.airPlaneOverlay.textureName = "FA-22_Raptor_P01.png"
         self.mapView.add(self.airPlaneOverlay)
     }
     
