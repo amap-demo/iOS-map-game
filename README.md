@@ -1,7 +1,7 @@
 本工程主要介绍了 高德地图iOS SDK 3D版本 在基于地图的游戏方面的应用。
 ## 前述 ##
 
-- [高德官方网站申请key](http://id.amap.com/?ref=http%3A%2F%2Fapi.amap.com%2Fkey%2F).
+- [高德官网申请Key](http://lbs.amap.com/dev/#/).
 - 阅读[开发指南](http://lbs.amap.com/api/ios-sdk/summary/).
 - 工程基于iOS 3D地图SDK实现
 
