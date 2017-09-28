@@ -16,6 +16,11 @@
 		19EFDB0C1E039451004702D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EFDB0A1E039451004702D3 /* Main.storyboard */; };
 		19EFDB111E039451004702D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19EFDB0F1E039451004702D3 /* LaunchScreen.storyboard */; };
 		19EFDB4B1E078DD0004702D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19EFDB4A1E078DD0004702D3 /* Assets.xcassets */; };
+		3AEECB9D1F750712001BE65C /* FelReaverMount.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AEECB981F750711001BE65C /* FelReaverMount.png */; };
+		3AEECB9E1F750712001BE65C /* V_body.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AEECB991F750711001BE65C /* V_body.png */; };
+		3AEECB9F1F750712001BE65C /* Cottage_Texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AEECB9A1F750711001BE65C /* Cottage_Texture.jpg */; };
+		3AEECBA01F750712001BE65C /* Farmhouse_Texture.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3AEECB9B1F750712001BE65C /* Farmhouse_Texture.jpg */; };
+		3AEECBA11F750712001BE65C /* FA-22_Raptor_P01.png in Resources */ = {isa = PBXBuildFile; fileRef = 3AEECB9C1F750712001BE65C /* FA-22_Raptor_P01.png */; };
 		81B61EC01D66A20900415DAD /* AMap3DObjectOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 81B61EBF1D66A20900415DAD /* AMap3DObjectOverlay.m */; };
 		81B61EC31D66A41100415DAD /* AMap3DObjectOverlayRenderer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 81B61EC21D66A41100415DAD /* AMap3DObjectOverlayRenderer.mm */; };
 		8DDFCBC6229ACF1523D24210 /* libPods-reaverInMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52950540D3CDE5FAA9A06E08 /* libPods-reaverInMap.a */; };
@@ -54,6 +59,11 @@
 		19EFDB121E039451004702D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19EFDB161E039AB5004702D3 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		19EFDB4A1E078DD0004702D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = reaverInMap/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		3AEECB981F750711001BE65C /* FelReaverMount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FelReaverMount.png; path = reaver/FelReaverMount.png; sourceTree = "<group>"; };
+		3AEECB991F750711001BE65C /* V_body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = V_body.png; path = reaver/V_body.png; sourceTree = "<group>"; };
+		3AEECB9A1F750711001BE65C /* Cottage_Texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Cottage_Texture.jpg; path = reaver/Cottage_Texture.jpg; sourceTree = "<group>"; };
+		3AEECB9B1F750712001BE65C /* Farmhouse_Texture.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Farmhouse_Texture.jpg; path = reaver/Farmhouse_Texture.jpg; sourceTree = "<group>"; };
+		3AEECB9C1F750712001BE65C /* FA-22_Raptor_P01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "FA-22_Raptor_P01.png"; path = "reaver/FA-22_Raptor_P01.png"; sourceTree = "<group>"; };
 		52950540D3CDE5FAA9A06E08 /* libPods-reaverInMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reaverInMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EE88CC9B58D6300B917AA4F /* Pods-reaverInMap-swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reaverInMap-swift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-reaverInMap-swift/Pods-reaverInMap-swift.debug.xcconfig"; sourceTree = "<group>"; };
 		7DB8CED35D49AE0312DE0D28 /* Pods-reaverInMap-swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reaverInMap-swift.release.xcconfig"; path = "Pods/Target Support Files/Pods-reaverInMap-swift/Pods-reaverInMap-swift.release.xcconfig"; sourceTree = "<group>"; };
@@ -183,6 +193,11 @@
 		C87E3B071C573228000ACF0C /* reaver */ = {
 			isa = PBXGroup;
 			children = (
+				3AEECB9A1F750711001BE65C /* Cottage_Texture.jpg */,
+				3AEECB9C1F750712001BE65C /* FA-22_Raptor_P01.png */,
+				3AEECB9B1F750712001BE65C /* Farmhouse_Texture.jpg */,
+				3AEECB981F750711001BE65C /* FelReaverMount.png */,
+				3AEECB991F750711001BE65C /* V_body.png */,
 				196BC8651D6B1DBB00EBF216 /* raptor.h */,
 				196BC8621D6B1A3F00EBF216 /* Combat_Vehicle.h */,
 				196BC8611D6B16C300EBF216 /* Snow covered CottageOBJ.h */,
@@ -282,7 +297,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = Autonavi;
 				TargetAttributes = {
 					19EFDB031E039451004702D3 = {
@@ -338,9 +353,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3AEECBA01F750712001BE65C /* Farmhouse_Texture.jpg in Resources */,
+				3AEECB9E1F750712001BE65C /* V_body.png in Resources */,
+				3AEECB9D1F750712001BE65C /* FelReaverMount.png in Resources */,
 				C87E3AFA1C57245E000ACF0C /* LaunchScreen.storyboard in Resources */,
 				196BC8641D6B1A6100EBF216 /* Assets.xcassets in Resources */,
 				C87E3AF51C57245E000ACF0C /* Main.storyboard in Resources */,
+				3AEECBA11F750712001BE65C /* FA-22_Raptor_P01.png in Resources */,
+				3AEECB9F1F750712001BE65C /* Cottage_Texture.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,9 +410,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-reaverInMap-swift/Pods-reaverInMap-swift-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -405,13 +428,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-reaverInMap-swift-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D1BE4B81774E264C08A2097A /* [CP] Copy Pods Resources */ = {
@@ -420,9 +446,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-reaverInMap/Pods-reaverInMap-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -435,13 +464,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-reaverInMap-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
