@@ -51,7 +51,8 @@
         AMap3DObjectOverlay *objOverlay = (AMap3DObjectOverlay *)overlay;
         AMap3DObjectOverlayRenderer * reaverRenderer = [[AMap3DObjectOverlayRenderer alloc] initWithObjectOverlay:overlay];
         UIImage *image = [UIImage imageNamed:objOverlay.textureName];
-        [reaverRenderer loadStrokeTextureImage:image];
+        reaverRenderer.strokeImage = image;
+//        [reaverRenderer loadStrokeTextureImage:image];
         return reaverRenderer;
     }
     

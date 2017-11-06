@@ -220,6 +220,8 @@ void translateM(float* m, int mOffset,float x, float y, float z) {
 /* OpenGL绘制。 */
 - (void)glRender
 {
+    [super glRender];
+    
     if (_program == 0) {
         [self initShader];
         
