@@ -257,7 +257,8 @@ void translateM(float* m, int mOffset,float x, float y, float z) {
     glUseProgram(_program);
 
     glEnable(GL_DEPTH_TEST);
-
+    glDepthMask(GL_TRUE);
+    
     glBindTexture(GL_TEXTURE_2D, self.strokeTextureID);
 
     glEnableVertexAttribArray(_vertexLocation);
@@ -307,6 +308,7 @@ void translateM(float* m, int mOffset,float x, float y, float z) {
     
     glDisableVertexAttribArray(_textureCodeLocation);
     
+    glDepthMask(GL_FALSE);
     glDisable(GL_DEPTH_TEST);
     
     glUseProgram(0);
