@@ -240,7 +240,6 @@
 				19EFDB001E039451004702D3 /* Sources */,
 				19EFDB011E039451004702D3 /* Frameworks */,
 				19EFDB021E039451004702D3 /* Resources */,
-				036B826B21D9A5010F829D2E /* [CP] Embed Pods Frameworks */,
 				92B90F8C01B837928B970F68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -260,7 +259,6 @@
 				C87E3AE31C57245D000ACF0C /* Sources */,
 				C87E3AE41C57245D000ACF0C /* Frameworks */,
 				C87E3AE51C57245D000ACF0C /* Resources */,
-				75E06EB9EFE925CA88F056A1 /* [CP] Embed Pods Frameworks */,
 				D1BE4B81774E264C08A2097A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
@@ -323,6 +321,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -374,52 +373,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		036B826B21D9A5010F829D2E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reaverInMap-swift/Pods-reaverInMap-swift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		75E06EB9EFE925CA88F056A1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reaverInMap/Pods-reaverInMap-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		92B90F8C01B837928B970F68 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-reaverInMap-swift/Pods-reaverInMap-swift-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-reaverInMap-swift/Pods-reaverInMap-swift-resources.sh",
 				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reaverInMap-swift/Pods-reaverInMap-swift-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reaverInMap-swift/Pods-reaverInMap-swift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B8A6276FDC0C340D53941503 /* [CP] Check Pods Manifest.lock */ = {
@@ -446,16 +415,16 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-reaverInMap/Pods-reaverInMap-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-reaverInMap/Pods-reaverInMap-resources.sh",
 				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AMap.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-reaverInMap/Pods-reaverInMap-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reaverInMap/Pods-reaverInMap-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DC28799ADB8962AD6DF53C23 /* [CP] Check Pods Manifest.lock */ = {
@@ -577,7 +546,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "reaverInMap-swift/BridgeHeader.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -602,7 +571,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = openPlatformInhouse;
 				SWIFT_OBJC_BRIDGING_HEADER = "reaverInMap-swift/BridgeHeader.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

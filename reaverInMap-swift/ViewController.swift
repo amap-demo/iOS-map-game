@@ -66,7 +66,7 @@ class ViewController: UIViewController, MAMapViewDelegate, AMap3DObjectOverlayRe
         perform(#selector(action2), with: nil, afterDelay: 0.5 + 3)
     }
     
-    func action1() {
+    @objc func action1() {
         mapView.setZoomLevel(17, animated: true)
         mapView.setCenter(airPlaneOverlay.coordinate, animated: true)
         mapView.setCameraDegree(60, animated: true, duration: 1)
@@ -77,7 +77,7 @@ class ViewController: UIViewController, MAMapViewDelegate, AMap3DObjectOverlayRe
         render.move(toNewCoordinate: CLLocationCoordinate2DMake(39.995001, 116.480644), andDuration: 3)
     }
     
-    func action2() {
+    @objc func action2() {
         mapView.setZoomLevel(19, animated: true)
         mapView.setRotationDegree(40, animated: true, duration: 1)
         mapView.setCameraDegree(60, animated: true, duration: 1)
